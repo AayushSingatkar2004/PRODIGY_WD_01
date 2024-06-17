@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.container {
+    max-width: 95vw;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.page-name {
+    font-size: 1.5rem;
+    color: #e24937;
+}
+
+.page-name .logo {
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+nav ul li:hover {
+    background-color: #e8a092;
+    padding: 8px;
+    border-radius: 12px;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    height: 67px;
+}
+
+.navbar li {
+    cursor: pointer;
+    list-style: none;
+    margin: 0 12px;
+    transition: all .2s;
+}
+.navbar li:last-child{
+    opacity: 0;
+    width: 0;
+}
+
+.topleft {
+    margin-bottom: 35px;
+    width: 50%;
+
+}
+
+.topright {
+    width: 50%;
+
+}
+
+.section1 {
+    /* max-height: 100vh; */
+    margin-top: 70px;
+}
+
+.dumbellimg {
+    width: 289px;
+}
+
+.topright .gymimg {
+    opacity: 1;
+    width: 466px;
+}
+
+.section1 h1 {
+    font-size: 2 rem;
+}
+
+.section2 {
+    padding-left: 33px;
+    padding-right: 33px;
+    margin-bottom: 42px;
+}
+
+.section2 h1 {
+    margin-top: 65px;
+    font-size: 2rem;
+}
+
+.section2 p {
+    padding: 0 8vw;
+    text-align: center;
+}
+
+.boxes{
+    overflow-x: scroll;
+}
+
+.box {
+    padding: 8px 0;
+    margin: 12px 22px;
+    min-width: 20vw;
+    border: 2px solid #be3323;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    word-wrap: break-word;
+    transition: box-shadow 0.3s ease;
+}
+
+.box:hover {
+    box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
+}
+
+.box .btn:hover{
+    background-color: #e89281;
+}
+
+.highlighted {
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.box ul {
+    list-style: none;
+}
+
+.box h2 {
+    padding: 15px 0;
+    font-size: 1.8rem;
+}
+
+.box ul li {
+    margin: 12px 2px;
+}
+
+.plantable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3 table {
+    width: 100%;
+    margin-bottom: 140px;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.section3 table th {
+    width: 23vw;
+    border-bottom: 2px solid black;
+    padding: 15px 0;
+}
+
+.section3 table td {
+    border-bottom: 2px solid black;
+}
+
+
+.section3 h1 {
+    font-size: 2.3rem;
+}
+
+.section3 {
+    padding: 65px;
+}
+
+.footer1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer1 ul {
+    list-style: none;
+    display: flex;
+    padding: 40px;
+}
+
+.footer1 ul li {
+    padding: 10px 30px;
+    font-size: 25px;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.footer1 ul li:hover {
+    background-color: #f0e4d0;
+    border-radius: 20px;
+}
+
+.footer1 p {
+    font-size: 15px;
+    padding-bottom: 50px;
+    color: #e24937;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+    gap: 10px;
+    transition: all .1s;
+}
+.buttons .btn:hover{
+    background-color: #e8a092;
+}
+
+.deal {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin: 12px 0;
+}
+
+.hamburger{
+    opacity: 0;
+}
+.nav-color{
+    width: 92vw;
+    top: 0;
+    position: fixed;
+    background-color: white;
+}
+
+@media (max-width:800px) {
+
+    header{
+        margin-top: 15px;
+    }
+    .topright .gymimg {
+        opacity: 0;
+        width: 0;
+    }
+
+    .topright {
+        width: 0;
+    }
+
+    .topleft {
+        width: 100vw;
+    }
+
+    .footer1 ul {
+        flex-direction: column;
+    }
+
+    .page-name{
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+@media (max-width:550px){
+    .boxes{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:450px) {
+
+    .hamburger{
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    nav ul li:hover {
+        background-color: #e8a092;
+        padding: 8px;
+        border-radius: 12px;
+        color: white;
+    }
+
+    .navbar li:last-child{
+        opacity: 1;
+        width: 72px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .navbar {
+        padding: 21px 15px;
+        top: -230px;
+        right: 0;
+        transition: all .3s;
+        flex-direction: column;
+        position: absolute;
+        background-color: white;
+    }
+    .navbar li{
+        margin: 6px 23px;
+    }
+
+
+}
